@@ -1,0 +1,28 @@
+<div class="container">
+
+  <ul class="nav nav-pills flex-column">
+
+    <li class="nav-item">
+      <a class="nav-link" [routerLink]="['/managetestresults', {outlets: { 'managetestoutlet': ['completedtests'] }}]"  routerLinkActive="active" >Completed Tests</a>
+    </li>
+
+    <li class="nav-item">
+      <!-- <a class="nav-link" [routerLink]="['/managetestresults/remainingtests']" routerLinkActive="active" >Remaining Tests</a> -->
+      <a class="nav-link" [routerLink]="['/managetestresults', {outlets: { 'managetestoutlet': ['remainingtests'] }}]"  routerLinkActive="active" >Remaining Tests</a>
+    </li>
+
+    <!-- [routerLink]="['/speakers', {outlets: {'list': ['speakersList'], 'bio': ['none']}}]"> -->
+
+    <li class="nav-item">
+      <a class="nav-link" [routerLink]="['/managetestresults', {outlets: { 'managetestoutlet2': ['teststats'] }}]"  routerLinkActive="active" >Test Statistics</a>
+    </li>
+
+  </ul>
+
+</div>
+
+<hr>
+
+<router-outlet name='managetestoutlet'></router-outlet>
+<router-outlet name='managetestoutlet2'></router-outlet>
+
