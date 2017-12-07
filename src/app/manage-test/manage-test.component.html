@@ -1,0 +1,21 @@
+<div class="container">
+
+  <ul class="nav nav-pills flex-column">
+
+    <li class="nav-item">
+      <a class="nav-link" [routerLink]="['/completedtests']" routerLinkActive="active" >Completed Tests</a>
+    </li>
+
+    <li class="nav-item">
+      <a class="nav-link" [routerLink]="['/remainingtests']" routerLinkActive="active" >Remaining Tests</a>
+    </li>
+
+    <li class="nav-item">
+      <a class="nav-link" [routerLink]="['/teststats']" routerLinkActive="active" >Test Stats</a>
+    </li>
+
+  </ul>
+
+</div>
+
+<router-outlet></router-outlet>

@@ -1,0 +1,35 @@
+<!-- <nav class="nav">
+
+  <a class="nav-link active" [routerLink]="['/home']">Home</a>
+  <a class="nav-link" [routerLink]="['/qbank']">Question Bank</a>
+  <a class="nav-link" [routerLink]="['/createtest']">Create a Test </a>
+  <a class="nav-link" [routerLink]="['/taketest']">Take Test </a>
+  <a class="nav-link" [routerLink]="['/managetestresults']">Manage Test Results</a>
+
+</nav> -->
+
+<ul class="nav nav-tabs">
+
+  <li class="nav-item">
+    <a class="nav-link" [routerLink]="['/home']"  routerLinkActive="active">Home</a>
+  </li>
+
+  <li class="nav-item">
+    <a class="nav-link" [routerLink]="['/qbank']" routerLinkActive="active">Question Bank</a>
+
+  </li>
+
+  <li class="nav-item">
+    <a class="nav-link" [routerLink]="['/createtest']" routerLinkActive="active">Create a Test </a>
+  </li>
+
+  <li class="nav-item">
+    <a class="nav-link" [routerLink]="['/taketest']" routerLinkActive="active">Take Test </a>
+  </li>
+
+  <li class="nav-item">
+  <a class="nav-link" [routerLink]="['/managetestresults']" routerLinkActive="active">Manage Test Results</a>
+  </li>
+</ul>
+
+<router-outlet></router-outlet>
