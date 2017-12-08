@@ -14,6 +14,8 @@ import { QuestionBankComponent } from './question-bank/question-bank.component';
 import { CreateTestComponent } from './create-test/create-test.component';
 import { TakeTestComponent } from './take-test/take-test.component';
 import { AdminModule } from './admin/admin.module';
+import { NiceTestComponent } from './nice-test/nice-test.component';
+import { SomeColaComponent } from './some-cola/some-cola.component';
 
 
 
@@ -25,6 +27,8 @@ import { AdminModule } from './admin/admin.module';
     QuestionBankComponent,
     CreateTestComponent,
     TakeTestComponent,
+    NiceTestComponent,
+    SomeColaComponent,
   ],
   imports: [
     BrowserModule,AdminModule,RouterModule.forRoot(root_routes_in_my_application)

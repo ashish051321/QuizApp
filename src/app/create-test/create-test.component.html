@@ -1,3 +1,10 @@
 <p>
   create-test works!
+  
+  <a class="nav-link" [routerLink]="['/createtest', {outlets: { 'testsite': ['getnicetest'] , 'recreationsite': ['getsomecola']}}]"  routerLinkActive="active" >Create a nice test</a>
+  <a class="nav-link" [routerLink]="['/createtest', {outlets: { 'recreationsite': ['getsomecola'] }}]"  routerLinkActive="active" >Get me some cola</a>
+
+
+  <router-outlet name="testsite"></router-outlet>
+  <router-outlet name="recreationsite"></router-outlet>
 </p>
